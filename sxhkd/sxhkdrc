@@ -1,3 +1,9 @@
+# window + f for fullscreen possible toggle 
+# window + o for app explorer 
+# f9 for audio down f10 for audio up 
+# f11 for brightness down f12 for brightness up
+# alt + f4 for shutdown
+
 #  ------ programs  -------- # 
 
 ctrl + alt + t
@@ -153,3 +159,7 @@ super + shift + u
 
 
 
+# misc # 
+
+alt + F4 
+    shutdown now
