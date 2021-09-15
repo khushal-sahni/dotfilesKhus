@@ -16,11 +16,18 @@ super + shift + e
 
 #  ------ brightness  -------- # 
 
-XF86MonBrightnessUp
-    xbacklight -inc 10
+F12
+    brightnessctl s +750
 
-XF86MonBrightnessDown
-    xbacklight -dec 10
+F11
+    brightnessctl s 750-
+
+# -- volume keys here -- #
+
+F9 
+    pulseaudio-ctl down
+F10 
+    pulseaudio-ctl up
 
 #  ------------ bspwm hotkeys ------------ # 
 
@@ -129,7 +136,7 @@ super + m
 
 #fullscreen screenshot save
 
-super + Print
+Print
      maim "/home/$USER/Pictures/$(date)"
 
 #cropped save
