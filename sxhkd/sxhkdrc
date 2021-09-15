@@ -3,7 +3,7 @@
 ctrl + alt + t
 	kitty
 
-super + c
+super + o
         rofi -show drun
 
 # reload config (bspwmrc and sxhkdrc)  # 
