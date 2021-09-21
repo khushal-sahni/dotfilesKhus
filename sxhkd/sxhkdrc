@@ -94,7 +94,7 @@ super + {_,shift + }c
 
 # simple next window command 
 alt + Tab
-	bspc node -f next
+	bspc node -f next.local.!hidden.window.!locked
 
 # focus the next/previous desktop in the current monitor
 super + bracket{left,right}
