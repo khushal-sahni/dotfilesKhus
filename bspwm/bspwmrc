@@ -13,7 +13,7 @@ picom --experimental-backends &
 feh --bg-scale --randomize ~/Pictures/wallpapers/* &
 xrdb merge ~/.Xresources &  # (terminal theme)
 
-bspc monitor -d I II III IV V VI VII
+bspc monitor -d I II
 
 bspc config border_width         2
 bspc config window_gap          7

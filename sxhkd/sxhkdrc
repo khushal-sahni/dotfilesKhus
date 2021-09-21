@@ -80,6 +80,15 @@ super + ctrl + {m,x,y,z}
 
 # focus/swap
 
+
+# simple next window command 
+alt + Tab
+	bspc node -f next.local.!hidden.window.!locked
+
+#switch desktop
+super + Tab
+	bspc desktop -f next 
+
 # focus the node in the given direction
 super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
@@ -92,17 +101,13 @@ super + {p,b,comma,period}
 super + {_,shift + }c
 	bspc node -f {next,prev}.local
 
-# simple next window command 
-alt + Tab
-	bspc node -f next.local.!hidden.window.!locked
-
 # focus the next/previous desktop in the current monitor
 super + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
-super + {grave,Tab}
-	bspc {node,desktop} -f last
+super + grave
+	bspc node -f last
 
 # focus the older or newer node in the focus history
 super + {o,i}
@@ -173,3 +178,6 @@ super + shift + u
 
 alt + F4 
     shutdown now
+
+super + t 
+    thunar
