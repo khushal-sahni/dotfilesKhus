@@ -85,8 +85,8 @@ warn-temperature = 70
 format = <ramp> <label>
 format-warn = <ramp> <label-warn>
 format-padding = 0
-label = %temperature%
-label-warn = %temperature%
+label = %temperature-c%
+label-warn = %temperature-c%
 ramp-0 =  "󰜗" 
 ramp-foreground = #a4ebf3
 label-padding-right = 1
@@ -203,7 +203,7 @@ content-foreground =  #e06c75
 
 [module/wlan]
 type = internal/network
-interface = wlp3s0
+interface = wlp2s0
 interval = 3.0
 format-connected =  <label-connected>
 label-connected = "󰤪  " 
@@ -264,7 +264,8 @@ label-foreground = #BF616A
 label-padding = 1
 
 [module/xbacklight]
-type = internal/xbacklight
+type = internal/backlight
+card = intel_backlight
 format = <label>
 format-prefix = "  "
 label = %percentage%

@@ -11,7 +11,7 @@ polybar example &
 
 picom --experimental-backends & 
 feh --bg-scale --randomize ~/Pictures/wallpapers/* &
-xrdb merge ~/.Xresources &  # (terminal theme)
+xrdb merge ~/Xresources &  # (terminal theme)
 
 bspc monitor -d I II
 
