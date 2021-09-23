@@ -59,7 +59,7 @@ wm-restack = bspwm
 
 modules-left = round-left bspwm round-right 
 modules-center =    
-modules-right =      temperature   alsa battery round-left cpu round-right wlan mem xbacklight round-left time round-right  powermenu
+modules-right =      temperature   alsa battery round-left kernel cpu round-right wlan mem xbacklight round-left time round-right  powermenu
 
 font-0 = JetBrainsMono Nerd Font:style=Bold:pixelsize=13;3
 font-1 = JetBrainsMono Nerd Font:size=18;5
@@ -193,6 +193,21 @@ interval = 4600
 label =  %output%  
 label-padding = 2
 label-foreground = #BF616A
+
+[module/kernel]
+type = custom/script 
+exec = uname -r 
+tail = false
+interval = 1024
+
+format = <label>
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+format-prefix = " ( ͡° ͜ʖ ͡°) "
+format-prefix-foreground = #ffbf00
+#format-underline = #0084FF
+
+label-padding = 2
 
 [module/powermenu]
 type = custom/text 
