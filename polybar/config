@@ -57,9 +57,9 @@ border-bottom-color = ${colors.background}
 line-size = 3
 wm-restack = bspwm
 
-modules-left = round-left bspwm round-right 
+modules-left =  bspwm 
 modules-center =    
-modules-right =      temperature   alsa battery round-left kernel cpu round-right wlan mem xbacklight round-left time round-right  powermenu
+modules-right =      temperature   alsa battery  kernel cpu round-right wlan mem xbacklight time powermenu
 
 font-0 = JetBrainsMono Nerd Font:style=Bold:pixelsize=13;3
 font-1 = JetBrainsMono Nerd Font:size=18;5
@@ -185,14 +185,14 @@ label = %output% MB
 label-padding = 1
 format-prefix-foreground = #d19a66
 
-[module/updates]
-type = custom/script
-exec = doas xbps-install -S > /dev/null 2>&1; xbps-updates
-format = <label>
-interval = 4600 
-label =  %output%  
-label-padding = 2
-label-foreground = #BF616A
+; [module/updates]
+; type = custom/script
+; exec = doas xbps-install -S > /dev/null 2>&1; xbps-updates
+; format = <label>
+; interval = 4600 
+; label =  %output%  
+; label-padding = 2
+; label-foreground = #BF616A
 
 [module/kernel]
 type = custom/script 
@@ -213,7 +213,7 @@ label-padding = 2
 type = custom/text 
 content =" " 
 content-padding =2
-click-left = doas zzz &
+click-left = shutdown now &
 content-foreground =  #e06c75
 
 [module/wlan]
