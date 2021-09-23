@@ -59,7 +59,7 @@ wm-restack = bspwm
 
 modules-left = round-left bspwm round-right 
 modules-center =    
-modules-right =      temperature   alsa battery round-left cpu round-right updates wlan mem xbacklight round-left time round-right  powermenu
+modules-right =      temperature   alsa battery round-left cpu round-right wlan mem xbacklight round-left time round-right  powermenu
 
 font-0 = JetBrainsMono Nerd Font:style=Bold:pixelsize=13;3
 font-1 = JetBrainsMono Nerd Font:size=18;5
