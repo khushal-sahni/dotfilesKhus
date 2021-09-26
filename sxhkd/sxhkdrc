@@ -63,9 +63,11 @@ super + {d,shift + d,s,f}
 
 # focus/swap
 
-# simple next window command 
+# simple next and last window command 
 alt + Tab
 	bspc node -f next.local.!hidden.window.!locked
+alt + grave
+        bspc node -f last.local.!hidden.window.!locked
 
 #switch desktop
 super + Tab
