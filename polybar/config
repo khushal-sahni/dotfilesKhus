@@ -237,7 +237,7 @@ type = internal/network
 interface = wlp2s0
 interval = 3.0
 format-connected =  <label-connected>
-label-connected = "󰤪  " 
+label-connected = %{A1:nm-connection-editor:}󰤪 %{A} 
 label-connected-foreground = #A3BE8C 
 
 [module/battery]
