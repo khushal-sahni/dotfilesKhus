@@ -57,9 +57,9 @@ border-bottom-color = ${colors.background}
 line-size = 3
 wm-restack = bspwm
 
-modules-left =  bspwm 
+modules-left =  bspwm weather
 modules-center =    
-modules-right =      temperature   alsa battery  weather cpu round-right wlan mem xbacklight time powermenu
+modules-right =      temperature   alsa battery cpu round-right wlan bluetooth  mem xbacklight time powermenu
 
 font-0 = JetBrainsMono Nerd Font:style=Bold:pixelsize=13;3
 font-1 = JetBrainsMono Nerd Font:size=18;5
@@ -239,6 +239,17 @@ interval = 3.0
 format-connected =  <label-connected>
 label-connected = %{A1:nm-connection-editor:}󰤪 %{A} 
 label-connected-foreground = #A3BE8C 
+
+[module/bluetooth]
+type = custom/script
+exec = /home/rice/.config/polybar/polybar-bluetooth/bluetooth.sh
+interval = 2
+click-left = exec blueberry
+click-right = exec /home/rice/.config/polybar/polybar-bluetooth/toggle_bluetooth.sh
+format-padding = 1
+format-background = #000000
+format-foreground = #ffffff
+
 
 [module/battery]
 type = internal/battery
