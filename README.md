@@ -1,7 +1,7 @@
 # dotfilesKhus
-dotfiles for my rice 
+dotfiles for my bspwm rice 
 
-This is a bspwm rice which I'm working on and will take ages to complete because placements are going on as well
+This is a rice which I'm working on and will take ages to complete because placements are going on as well
 
 ## Current Look 
 
