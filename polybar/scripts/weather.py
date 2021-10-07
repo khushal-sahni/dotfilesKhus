@@ -1,7 +1,11 @@
 import requests
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 CITY="1261039"
-API_KEY="c9d72a805cdf193cbb19119c74102fb2"
+# set your openweathermap api key 
+API_KEY = os.environ.get("API_KEY")
 UNITS="metric"
 UNIT_KEY="C"
 LANG="en"
