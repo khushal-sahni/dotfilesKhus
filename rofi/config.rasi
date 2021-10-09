@@ -1,11 +1,12 @@
+
 configuration{
     modi: "drun";
     width: 40;
     columns: 1;
     lines: 5;
- 	font: "monospace 13";
+        font: "monospace 13";
     show-icons: false;
-	icon-theme: "Papirus-Dark";
+        icon-theme: "Papirus-Dark";
     terminal: "kitty";
     drun-display-format: "{icon} {name}";
     display-drun: "Run";
@@ -13,5 +14,5 @@ configuration{
     separator-style: "solid";
     disable-history: true;
     hide-scrollbar: true;
-	theme: "~/.config/rofi/simple.rasi";
+        theme: "~/.config/rofi/simple.rasi";
 }
