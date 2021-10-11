@@ -229,7 +229,7 @@ format-prefix-foreground = #ffbf00
 type = custom/text 
 content =" " 
 content-padding =2
-click-left = shutdown now &
+click-left = /home/rice/.config/rofi/bin/menu_powermenu &
 content-foreground =  #e06c75
 
 [module/wlan]

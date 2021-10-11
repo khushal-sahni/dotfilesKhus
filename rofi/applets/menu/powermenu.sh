@@ -65,6 +65,8 @@ case $chosen in
 			i3lock
 		elif [[ -f /usr/bin/betterlockscreen ]]; then
 			betterlockscreen -l
+		else 
+			bspc quit
 		fi
         ;;
     $suspend)
