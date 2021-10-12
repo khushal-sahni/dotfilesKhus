@@ -87,7 +87,7 @@ alt + F4
     shutdown now
 
 super + t 
-    thunar
+    exec thunar
 
 super + r
     kitty -e ranger
