@@ -87,7 +87,7 @@ alt + F4
     shutdown now
 
 super + t 
-    exec thunar
+    exec pcmanfm
 
 super + r
     kitty -e ranger
