@@ -1,0 +1,55 @@
+{
+    "workbench.startupEditor": "none",
+    "editor.fontSize": 16,
+    "editor.minimap.enabled": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "editor.multiCursorModifier": "ctrlCmd",
+    "workbench.colorTheme": "Gruvbox Dark Medium",
+    "git.confirmSync": false,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "explorer.confirmDelete": false,
+    "editor.fontFamily": "'Fira Code','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontLigatures": true,
+    "editor.inlineSuggest.enabled": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "terminal.integrated.fontSize": 16,
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+              {
+                "type": "node",
+                "request": "launch",
+                "name": "start ^_^",
+                "runtimeExecutable": "npm",
+                "runtimeArgs": ["start"],
+                "outputCapture": "std",
+            },
+            {
+                "type": "node",
+                "request": "attach",
+                "name": "Attach for debugging",
+                "processId": "${command:PickProcess}"
+            },
+        ]
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "terminal.integrated.scrollback": 10000,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "debug.console.fontSize": 14
+}
